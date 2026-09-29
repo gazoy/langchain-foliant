@@ -3,7 +3,7 @@
 [Foliant](https://foliant.network) for LangChain: a payment tool for agents that pay x402 endpoints, and a middleware that enforces the agent's spending budget on every paid tool call. Built for the supervisor / subagents pattern: the supervisor holds the crew's budget, each subagent gets a delegated cap, and every spend is checked against every level.
 
 ```bash
-pip install langchain-foliant
+pip install langchain-foliant   # pulls in foliant-protocol, the reference implementation
 ```
 
 ## What it does
