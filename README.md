@@ -25,7 +25,7 @@ from langchain_foliant import FoliantCrew
 ledger = Ledger()                       # the reference in-memory ledger; contracts on Base/Avalanche are the next phase
 http = httpx.Client()
 
-supervisor = Agent(ledger, KeyPair.generate(), KeyPair.generate(),
+supervisor = Agent(ledger, KeyPair(), KeyPair(),
                    Policy(per_tx_max=500, per_window_max=150, window_secs=3600))
 crew = FoliantCrew(supervisor, http)
 
