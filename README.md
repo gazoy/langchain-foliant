@@ -1,5 +1,7 @@
 # langchain-foliant
 
+Listed in [LangChain's integration directory](https://docs.langchain.com/oss/python/integrations/providers/all_providers) (langchain-ai/docs#6306). Works against the Foliant reference node and, through `foliant-protocol[chain]`, the contracts on Avalanche Fuji.
+
 [Foliant](https://foliant.network) for LangChain: a payment tool for agents that pay x402 endpoints, and a middleware that enforces the agent's spending budget on every paid tool call. Built for the supervisor / subagents pattern: the supervisor holds the crew's budget, each subagent gets a delegated cap, and every spend is checked against every level.
 
 ```bash
