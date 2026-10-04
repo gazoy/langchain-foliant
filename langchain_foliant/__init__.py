@@ -4,4 +4,4 @@ from .middleware import BudgetExhaustedError, FoliantBudgetMiddleware
 from .tools import FoliantPaymentTool
 
 __all__ = ["BudgetExhaustedError", "FoliantBudgetMiddleware", "FoliantCrew", "FoliantPaymentTool", "Worker"]
-__version__ = "0.1.2"
+__version__ = "0.1.3"
