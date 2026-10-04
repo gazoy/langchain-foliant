@@ -64,5 +64,6 @@ class FoliantPaymentTool(BaseTool):
         except ValueError as e:  # channel or pool deposit exhausted
             return f"BUDGET REFUSED: {e}"
         receipt = client.receipts[-1] if client.receipts else None
-        rid = receipt.get("updateId", "")[:16] if receipt else "none"
+        # The provider signs an envelope: the receipt body, with updateId inside it, plus a signature.
+        rid = (receipt.get("body", {}).get("updateId", "") or "")[:16] if receipt else "none"
         return f"{r.status_code}\n{r.text}\n[receipt {rid}]"

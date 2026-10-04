@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "langchain-foliant"
-version = "0.1.1"
+version = "0.1.2"
 description = "Foliant for LangChain: a payment tool for agents paying over x402 and a middleware that enforces a crew's spending budget on every tool call"
 readme = "README.md"
 license = "Apache-2.0"
